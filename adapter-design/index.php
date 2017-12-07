@@ -4,9 +4,10 @@ require 'vendor/autoload.php';
 
 use Acme\Book;
 use Acme\Kindle; 
+use Acme\Nook;
 use Acme\BookInterface;
 use Acme\eReaderInterface;
-use Acme\KindleAdapter;
+use Acme\eReaderAdapter;
 
 class Person
 { 
@@ -18,5 +19,5 @@ class Person
 }
 
 //new up the KindleAdapter and pass into the Kindle object
-(new Person)-> read(new KindleAdapter(new Kindle));
+(new Person)-> read(new eReaderAdapter(new Nook));
  
