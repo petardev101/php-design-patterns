@@ -9,7 +9,7 @@ class Book implements BookInterface
 {
     public function open()
     {
-        \var_dump('opening the paper book.');
+        var_dump('opening the paper book.');
     }
 
     public function turnPage()
@@ -17,3 +17,4 @@ class Book implements BookInterface
         var_dump('turning the page of the paper book.');
     }
 }
+
