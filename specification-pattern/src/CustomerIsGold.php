@@ -4,6 +4,6 @@ class CustomerIsGold
 {
     public function isSatisfiedBy(Customer $customer)
     {
-        $customer->type == 'gold';
+        return $customer->type() == 'gold';
     }
 }

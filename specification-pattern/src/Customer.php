@@ -2,14 +2,15 @@
 
 class Customer
 {
-    protected $plan;
+    protected $type;
 
-    public function __construct($plan)
+    public function __construct($type)
         {
-            $this->plan = $plan;
+            $this->type = $type;
         }
+
+    public function type()
+    {
+        return $this->type;
+    }
 }
-
-$spec = new CustomerIsGold;
-
-$spec->isSatisfiedBy(new CustomerIsGold);
