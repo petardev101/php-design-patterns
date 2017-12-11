@@ -1,5 +1,9 @@
 <?php
 
+namespace App;
+
+use App\CustomerIsGold;
+
 class CustomerIsGoldTest extends PHPUnit\Framework\TestCase
 {
     /** @test */
