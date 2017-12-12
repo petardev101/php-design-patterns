@@ -1,11 +1,9 @@
 <?php
 
-namespace App;
-
 class CustomersRepository
 {
-    public function bySpecification()
+    public function bySpecification($specification)
     {
-        
+      return $specification->isSatisfiedBy($customer);
     }
 }

@@ -1,11 +1,8 @@
-<?php
+<?php 
 
-namespace App;
+require_once ('PHPUnit/Framework/TestCase.php');
 
-use App\CustomersRepository;
-
-
-class CustomersRepositoryTest extends \PHPUnit\Framework\TestCase
+class CustomersRepositoryTest extends PHPUnit_Framework_TestCase
 {
      /** @test */
      function it_fetches_all_customers_who_match_a_given_specification()

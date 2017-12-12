@@ -1,10 +1,8 @@
 <?php
 
-namespace App;
+require_once ('PHPUnit/Framework/TestCase.php');
 
-use App\CustomerIsGold;
-
-class CustomerIsGoldTest extends PHPUnit\Framework\TestCase
+class CustomerIsGoldTest extends PHPUnit_Framework_TestCase
 {
     /** @test */
     function a_customer_is_gold_if_they_have_the_respective_type()

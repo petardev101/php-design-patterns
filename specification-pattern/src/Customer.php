@@ -1,7 +1,5 @@
 <?php
 
-namespace App;
-
 class Customer
 {
     protected $type;
