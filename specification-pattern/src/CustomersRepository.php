@@ -4,23 +4,17 @@ namespace App;
 
 class CustomersRepository
 { 
-  protected $customers;
-
-  public function __construct(array $customers)
-  {
-      $this->customers = $customers;               
-  }
-
   public function matchingSpecification($specification)
   {
-    $matches = [];
+    $customers = Customer::query();
 
-    foreach ($this->all() as $customer) {
-      if ($specification->isSatisfiedBy($customer)) {
-        $matches[] = $customer;  
-      }
-    }
+    $customers= $specification->asScope($customers);
 
-    return $matches;
+    return $customers->get();
+  }
+
+  public function all()
+  {
+    return Customer::all();
   }
 }
